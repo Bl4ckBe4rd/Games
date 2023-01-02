@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://crcroxmmw5xid"]
+
+[ext_resource type="Script" path="res://Action RPG Resources/UI/health_ui.gd" id="1_cn0fp"]
+
+[node name="HealthUI" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 80.0
+offset_bottom = 24.0
+script = ExtResource("1_cn0fp")
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(0.831373, 0.227451, 0.164706, 1)
+offset_right = 80.0
+offset_bottom = 26.0
+text = "HP = 4"

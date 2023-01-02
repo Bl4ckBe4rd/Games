@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://34vcy4pjevd5"]
+
+[ext_resource type="Script" path="res://Action RPG Resources/stats.gd" id="1_a8nlt"]
+
+[node name="Stats" type="Node"]
+script = ExtResource("1_a8nlt")

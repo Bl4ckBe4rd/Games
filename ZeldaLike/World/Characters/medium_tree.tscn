@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://daj1oo8d17n5w"]
+
+[ext_resource type="Texture2D" uid="uid://bv12mpabg1418" path="res://World/Objects/Basic Grass Biom things 1.png" id="1_x0cfs"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rhbmy"]
+radius = 8.0
+height = 16.0
+
+[node name="MediumTree" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_x0cfs")
+region_enabled = true
+region_rect = Rect2(48, 0, 32, 32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 7)
+shape = SubResource("CapsuleShape2D_rhbmy")

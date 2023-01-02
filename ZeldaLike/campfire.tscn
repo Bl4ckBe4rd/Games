@@ -1,0 +1,40 @@
+[gd_scene load_steps=8 format=3 uid="uid://cm5xq0hpwv2r1"]
+
+[ext_resource type="Texture2D" uid="uid://b0bknvhep3r1t" path="res://Animated stuff/campfire_16x16.png" id="1_pdiwx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_av45n"]
+atlas = ExtResource("1_pdiwx")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4xui6"]
+atlas = ExtResource("1_pdiwx")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_whmur"]
+atlas = ExtResource("1_pdiwx")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_imo2b"]
+atlas = ExtResource("1_pdiwx")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6am4p"]
+animations = [{
+"frames": [SubResource("AtlasTexture_av45n"), SubResource("AtlasTexture_4xui6"), SubResource("AtlasTexture_whmur"), SubResource("AtlasTexture_imo2b")],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ut781"]
+radius = 5.0
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+frames = SubResource("SpriteFrames_6am4p")
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("CircleShape2D_ut781")

@@ -1,0 +1,18 @@
+[gd_resource type="AnimatedTexture" load_steps=5 format=3 uid="uid://bmm0b68jdloqp"]
+
+[ext_resource type="Texture2D" uid="uid://daa0w05gtdniy" path="res://World/tile000.png" id="1_xihab"]
+[ext_resource type="Texture2D" uid="uid://c1iwgfsgngfal" path="res://World/tile001.png" id="2_okl40"]
+[ext_resource type="Texture2D" uid="uid://tt3je5hsoh5q" path="res://World/tile002.png" id="3_jtohd"]
+[ext_resource type="Texture2D" uid="uid://duohm2ax10xhu" path="res://World/tile003.png" id="4_52if2"]
+
+[resource]
+frames = 4
+speed_scale = 5.0
+frame_0/texture = ExtResource("1_xihab")
+frame_0/duration = 0.3
+frame_1/texture = ExtResource("2_okl40")
+frame_1/duration = 0.3
+frame_2/texture = ExtResource("3_jtohd")
+frame_2/duration = 0.3
+frame_3/texture = ExtResource("4_52if2")
+frame_3/duration = 0.3

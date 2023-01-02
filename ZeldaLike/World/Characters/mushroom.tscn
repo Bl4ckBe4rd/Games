@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqxwgsp1nken"]
+
+[ext_resource type="Texture2D" uid="uid://bv12mpabg1418" path="res://World/Objects/Basic Grass Biom things 1.png" id="1_jffxn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j0ey8"]
+size = Vector2(5, 4)
+
+[node name="Mushroom" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_jffxn")
+region_enabled = true
+region_rect = Rect2(80, 0, 16, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 3)
+shape = SubResource("RectangleShape2D_j0ey8")
